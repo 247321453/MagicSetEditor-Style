@@ -1,0 +1,42 @@
+﻿############################################################## Word lists jp
+word list:
+	name: KOrace
+	word: 물족
+	word: 야수족
+	word: 야수전사족
+	word: 공룡족
+	word: 환신야수족
+	word: 용족
+	word: 천사족
+	word: 악마족
+	word: 어류족
+	word: 곤충족
+	word: 기계족
+	word: 식물족
+	word: 불족
+	word: 사이킥족
+	word: 파충류족
+	word: 암석족
+	word: 해룡족
+	word: 마법사족
+	word: 번개족
+	word: 전사족
+	word: 비행야수족
+	word: 환룡족
+	word: 언데드족
+word list:
+	name: KOeffect
+	word: 다크 싱크로
+	word: 다크 튜너
+	word: 효과
+	word: 융합
+	word: 듀얼
+	word: 의식
+	word: 스피릿
+	word: 싱크로
+	word: 엑시즈
+	word: 툰
+	word: 튜너
+	word: 유니온
+	word: 팬듈럼
+	word: 특수 부른다

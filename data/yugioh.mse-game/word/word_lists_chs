@@ -1,0 +1,45 @@
+﻿############################################################## Word lists cns
+word list:
+	name: CNrace
+	word: 战士族
+	word: 魔法师族
+	word: 天使族
+	word: 恶魔族
+	word: 不死族
+	word: 机械族
+	word: 水族
+	word: 炎族
+	word: 岩石族
+	word: 鸟兽族
+	word: 植物族
+	word: 昆虫族
+	word: 雷族
+	word: 龙族
+	word: 兽族
+	word: 兽战士族
+	word: 恐龙族
+	word: 鱼族
+	word: 海龙族
+	word: 爬虫类族
+	word: 念动力族
+	word: 幻神兽族
+	word: 创造神族
+	word: 幻龙族
+word list:
+	name: CNeffect
+	word: 同调
+	word: 超量
+	word: 融合
+	word: 仪式
+	word: 效果
+	word: 调整
+	word: 灵魂
+	word: 卡通
+	word: 二重
+	word: 同盟
+	word: 灵摆
+	word: 反转
+	word: 黑暗同调
+	word: 黑暗调整
+	word: 特殊召唤
+	word: 衍生物

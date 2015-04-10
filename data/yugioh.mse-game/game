@@ -1,0 +1,21 @@
+﻿mse version: 2.0.0
+full name: 遊戲王
+short name: Yu-Gi-Oh!
+installer group: Yugioh/game files
+icon: icon.png
+position hint: 1
+version: 2014-01-01
+
+############################################################## The script
+init script: include file: script
+############################################################## Lots of lists
+include file: card_fields
+include file: set_fields
+include file: packs
+include file: word/word_lists_en
+include file: word/word_lists_cht
+include file: word/word_lists_chs
+include file: word/word_lists_jp
+include file: word/word_lists_ko
+include file: auto_replace
+############################################################## Other stuff

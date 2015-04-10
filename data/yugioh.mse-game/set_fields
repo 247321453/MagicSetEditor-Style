@@ -1,0 +1,100 @@
+﻿
+############################################################## Set fields
+set field:
+	type: info
+	name: Set Information
+set field:
+	type: text
+	name: title
+	default: "noname"
+	identifying: true
+	description: 套牌标题
+set field:
+	type: choice
+	name: language
+	initial: TW
+	choice: CN
+	choice: TW
+	choice: JP
+	choice: EN
+	choice: KO
+	description: such as: XXX-JP101、XX01-EN101
+set field:
+	type: text
+	name: edition
+	default: "MSE Edition"
+	description: such as "DUEL TERMINAL"
+set field:
+	type: text
+	name: author
+	default: "Your Name"
+	description: 247321453
+set field:
+	type: text
+	name: description
+	multi line: true
+	description: This information will not appear on the card.
+set field:
+	type: text
+	name: copyright
+	description: Copyright information. This will not appear on the card.
+set field:
+	type: info
+	name: Set Options
+set field:
+	type: boolean
+	name: gods have effects
+	description: Should god cards have effects? 神的效果文不是斜体？（仅英文有效）
+	initial: yes
+set field:
+	type: boolean
+	name: no corner
+	description: Should have not corner? 没有防伪标志
+	initial: no
+set field:
+	type: boolean
+	name: hide gamecode
+	description: 隐藏密码，最好先写好密码，再导出的时候再设置这个
+	initial: no
+set field:
+	type: boolean
+	name: ST mark is text
+	description: 魔法陷阱的符号带标志文字？用于OCG制作
+	initial: no
+set field:
+	type: boolean
+	name: copyright images
+	description: 版权文字为图片？用于OCG
+	initial: no
+set field:
+	type: boolean
+	name: pendulum image is small
+	description: pendulum image is small? Pendulum怪兽的中间图，不包含P的描述区域？用于YGOCORE
+	initial: no
+############################# Default style
+default set style:
+	Set Options:
+		alignment: middle center
+		padding left:50
+	Set Information:
+		alignment: middle center
+		padding left:50
+	title:
+		font:
+			size: 14
+	edition:
+		font:
+			size: 12
+			color: rgb(0,0,128)
+	author:
+		font:
+			size: 10
+			color: rgb(16,168,32)
+	language:
+		render style: both
+		choice images:
+			CN:	/yugioh.mse-game/icons/cn.png
+			TW:	/yugioh.mse-game/icons/cn.png
+			EN:	/yugioh.mse-game/icons/usgb.png
+			JP:	/yugioh.mse-game/icons/jp.png
+			KO:	/yugioh.mse-game/icons/ko.png

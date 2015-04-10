@@ -1,0 +1,50 @@
+﻿
+############################################################## Auto replace
+auto replace:
+	match: CR
+	replace: ©
+auto replace:
+	match: JPCP
+	replace: ©高橋和希 スタジオ・ダイス/集英社
+auto replace:
+	match: /1
+	replace: ①
+auto replace:
+	match: /2
+	replace: ②
+auto replace:
+	match: /3
+	replace: ③
+auto replace:
+	match: /4
+	replace: ④
+auto replace:
+	match: /5
+	replace: ⑤
+auto replace:
+	match: CR
+	replace: ©
+auto replace:
+	match: 》
+	replace: 」
+auto replace:
+	match: 《
+	replace: 「
+auto replace:
+	match: /.
+	replace: ・
+	whole word: false
+auto replace:
+	match: /&
+	replace: ∞
+	whole word: false
+auto replace:
+	match: TM
+	replace: ™
+	whole word: false
+auto replace:
+	match: ~
+	replace: CARDNAME
+auto replace:
+	match: DT
+	replace:DUEL TERMINAL

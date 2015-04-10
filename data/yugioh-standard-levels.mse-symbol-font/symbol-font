@@ -1,0 +1,100 @@
+﻿mse version: 2.0.0
+version: 2014-10-10
+short name: Level Symbols
+position hint: 001
+icon: star.png
+installer group: Yugioh/Symbol Fonts/Level Symbols
+# Symbol font for level symbols
+
+image font size: 16
+horizontal space: 0
+
+symbol:
+	code: %
+	image: { if is_spell_card() then get_lang_ex()+"mark/continuousspell.png" else get_lang_ex()+"mark/continuoustrap.png" }
+	enabled: { st_has_text() }
+symbol:
+	code: !
+	image: { get_lang_ex()+"mark/countertrap.png" }
+	enabled: { st_has_text() }
+symbol:
+	code: +
+	image: { get_lang_ex()+"mark/equipspell.png" }
+	enabled: { st_has_text() }
+symbol:
+	code: &
+	image: { get_lang_ex()+"mark/fieldspell.png" }
+	enabled: { st_has_text() }
+symbol:
+	code: $
+	image: { get_lang_ex()+"mark/quickspell.png" }
+	enabled: { st_has_text() }
+symbol:
+	code: #
+	image: { get_lang_ex()+"mark/ritualspell.png" }
+	enabled: { st_has_text() }
+symbol:
+	code: ^
+	image: { if is_spell_card() then get_lang_ex()+"mark/normalspell.png" else get_lang_ex()+"mark/normaltrap.png" }
+	enabled: { st_has_text() }
+symbol:
+	code: %
+	image: continuous.png
+	image font size: 44
+symbol:
+	code: !
+	image: counter.png
+	image font size: 44
+symbol:
+	code: +
+	image: equipment.png
+	image font size: 44
+symbol:
+	code: &
+	image: field.png
+	image font size: 44
+symbol:
+	code: $
+	image: quickplay.png
+	image font size: 44
+symbol:
+	code: #
+	image: ritual.png
+	image font size: 44
+	
+symbol:
+	code: [
+	image: { "leftbracket_"+get_lang()+".png" }
+	image font size: 28
+symbol:
+	code: ]
+	image: { "rightbracket_"+get_lang()+".png" }
+	image font size: 28
+symbol:
+	code: *
+	image: dstar.png
+	enabled: {card.card_type == "dark synchro monster"}
+	image font size: 17.95
+symbol:
+	code: *
+	image: xyzstar.png
+	enabled: {card.card_type == "xyz monster"}
+	image font size: 16.5
+symbol:
+	code: *
+	image: star.png
+	image font size: 16.5
+
+##############################################################
+# Insert-symbol menu
+insert symbol menu:
+	item: %
+	item: !
+	item: +
+	item: &
+	item: $
+	item: ^
+	item: #
+	item: [
+	item: ]
+	item: *

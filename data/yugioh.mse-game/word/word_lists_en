@@ -1,0 +1,45 @@
+﻿############################################################## Word lists en
+word list:
+	name: ENrace
+	word: Warrior
+	word: Spellcaster
+	word: Fairy
+	word: Fiend
+	word: Zombie
+	word: Machine
+	word: Aqua
+	word: Pyro
+	word: Rock
+	word: Winged Beast
+	word: Plant
+	word: Insect
+	word: Thunder
+	word: Dragon
+	word: Beast
+	word: Beast-Warrior
+	word: Dinosaur
+	word: Fish
+	word: Sea Serpent
+	word: Reptile
+	word: Psychic
+	word: Divine-Beast
+	word: Created-Divine
+	word: Wyrm
+word list:
+	name: ENeffect
+	word: Synchro
+	word: Xyz
+	word: Fusion
+	word: Ritual
+	word: Effect
+	word: Tuner
+	word: Spirit
+	word: Toon
+	word: Gemini
+	word: Union
+	word: Pendulum
+	word: Filp
+	word: Dark Synchro
+	word: Dark Tuner
+	word: Special Summon
+	word: Token

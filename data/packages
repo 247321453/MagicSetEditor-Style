@@ -1,0 +1,182 @@
+﻿mse_version: 2.0.0
+package:
+	name: cns.mse-locale
+	version: 2014-01-04
+	status: 34
+	file: M20120624T200001 cn.png
+	file: M20140127T164710 locale
+package:
+	name: en.mse-locale
+	version: 2011-01-22
+	status: 34
+package:
+	name: yugioh-ToText.mse-export-template
+	version: 2014-01-01
+	status: 34
+	file: A20141004T125001 export-template
+	file: A20141004T120720 icon.jpg
+package:
+	name: yugioh-Toimage.mse-export-template
+	version: 2014-01-01
+	status: 34
+	file: M20140406T113009 export-template
+	file: M20140112T080511 icon.jpg
+package:
+	name: yugioh-standard-levels.mse-symbol-font
+	version: 2014-10-10
+	status: 34
+	file: M20141011T104738 continuous.png
+	file: A20141004T122426 continuousspell.png
+	file: A20141004T122423 continuoustrap.png
+	file: M20141011T104809 counter.png
+	file: A20141004T122423 countertrap.png
+	file: M20140502T015932 dstar.png
+	file: M20141011T104745 equipment.png
+	file: A20141004T122425 equipspell.png
+	file: M20141011T104753 field.png
+	file: A20141004T122426 fieldspell.png
+	file: M20070908T163310 leftbracket.png
+	file: A20140224T232642 leftbracket_cn.png
+	file: A20140225T222944 leftbracket_en.png
+	file: A20140323T162319 leftbracket_jp.png
+	file: A20140406T000159 leftbracket_ko.png
+	file: A20140224T232642 leftbracket_tw.png
+	file: A20141004T122425 nomalspell.png
+	file: A20141004T122426 normaltrap.png
+	file: M20141011T104725 quickplay.png
+	file: A20141004T122426 quickspell.png
+	file: M20070908T163310 rightbracket.png
+	file: A20140224T232548 rightbracket_cn.png
+	file: A20140225T222920 rightbracket_en.png
+	file: A20140323T162410 rightbracket_jp.png
+	file: A20140406T000309 rightbracket_ko.png
+	file: A20140224T232548 rightbracket_tw.png
+	file: M20141011T104802 ritual.png
+	file: A20141004T122427 ritualspell.png
+	file: M20140502T015921 star.png
+	file: M20141011T150639 symbol-font
+	file: M20140502T015912 xyzstar.png
+package:
+	name: yugioh-standard.mse-style
+	version: 2009-08-08
+	status: 34
+	file: A20140323T101426 attribute/dark_en.png
+	file: A20140323T133736 attribute/dark_jp.png
+	file: A20140405T214330 attribute/dark_ko.png
+	file: A20140323T101448 attribute/divine_en.png
+	file: A20140323T133850 attribute/divine_jp.png
+	file: A20140405T214549 attribute/divine_ko.png
+	file: A20140323T101522 attribute/earth_en..png
+	file: A20140323T134349 attribute/earth_jp.png
+	file: A20140405T214352 attribute/earth_ko.png
+	file: A20140323T101543 attribute/fire_en.png
+	file: A20140323T134601 attribute/fire_jp.png
+	file: A20140405T214424 attribute/fire_ko.png
+	file: A20140323T101614 attribute/light_en.png
+	file: A20140323T134633 attribute/light_jp.png
+	file: A20140405T214446 attribute/light_ko.png
+	file: A20060515T132812 attribute/spell_en.png
+	file: A20140405T214717 attribute/spell_jp.png
+	file: A20140405T214814 attribute/spell_ko.png
+	file: A20060515T132714 attribute/trap_en.png
+	file: A20140405T214640 attribute/trap_jp.png
+	file: A20140405T214747 attribute/trap_ko.png
+	file: A20140323T101639 attribute/water_en.png
+	file: A20140323T134802 attribute/water_jp.png
+	file: A20140405T214511 attribute/water_ko.png
+	file: A20140323T101708 attribute/wind_en.png
+	file: A20140323T135239 attribute/wind_jp.png
+	file: A20140405T214529 attribute/wind_ko.png
+	file: A20080809T002702 bar.png
+	file: A20070908T163310 blank.png
+	file: A20080811T171334 blank2.png
+	file: A20141011T113057 card-dragons.png
+	file: A20141011T105407 card-dsynchro.png
+	file: A20141011T105608 card-effect.png
+	file: A20141011T105507 card-fusion.png
+	file: A20141011T105546 card-normal.png
+	file: A20141011T113047 card-obelisk.png
+	file: A20141011T113035 card-ra.png
+	file: A20141011T105526 card-ritual.png
+	file: A20140501T135958 card-sample.png
+	file: A20141011T113013 card-slifer.png
+	file: A20141011T105107 card-spell.png
+	file: A20141011T105452 card-synchro.png
+	file: A20141011T105020 card-token-noatkdef.png
+	file: A20141011T105407 card-token.png
+	file: A20141011T162721 card-transparent.png
+	file: A20141011T105039 card-trap.png
+	file: A20141011T105430 card-xyz.png
+	file: A20080809T002702 cornerfirst.png
+	file: A20080809T002702 cornerunlimited.png
+	file: A20140521T102655 desc.png
+	file: A20141011T110505 foil/border.png
+	file: A20141011T110321 foil/desc.png
+	file: A20141011T110421 foil/image.png
+	file: A20140412T164634 foil/parallelfoil.png
+	file: A20141011T110809 foil/pend_b.png
+	file: A20141011T110801 foil/pend_m.png
+	file: A20141011T110725 foil/pend_s.png
+	file: A20140412T164156 foil/secretfoil.png
+	file: A20070908T163310 foil/superfoil.png
+	file: A20140412T170012 foil/ultimaterfoil.png
+	file: A20141004T122421 jpcopyrihtblack.png
+	file: A20141004T122421 jpcopyrihtwhite.png
+	file: A20140519T105040 name.png
+	file: A20141011T104532 pendulum/line-effect.png
+	file: A20141011T104451 pendulum/line-fusion.png
+	file: A20141011T104520 pendulum/line-normal.png
+	file: A20141011T104507 pendulum/line-ritual.png
+	file: A20141011T104437 pendulum/line-synchro.png
+	file: A20141011T104253 pendulum/line-token.png
+	file: A20141011T104417 pendulum/line-xyz.png
+	file: A20141011T105245 pendulum/pendulum.png
+	file: A20141011T104152 pendulum/pendulum_lg.png
+	file: A20141011T104137 pendulum/pendulum_md.png
+	file: A20141011T104114 pendulum/pendulum_sm.png
+	file: A20141011T204619 style
+package:
+	name: yugioh-text-replacements.mse-symbol-font
+	version: 2014-10-10
+	status: 34
+	file: M20141004T122431 dot.png
+	file: A20140224T232642 leftbracket_cn.png
+	file: A20140225T222944 leftbracket_en.png
+	file: A20140323T162319 leftbracket_jp.png
+	file: A20140406T000159 leftbracket_ko.png
+	file: A20140224T232642 leftbracket_tw.png
+	file: A20140529T093940 n1.png
+	file: A20140529T093940 n2.png
+	file: A20140529T093940 n3.png
+	file: A20140529T093940 n4.png
+	file: A20140529T093940 n5.png
+	file: A20140224T232548 rightbracket_cn.png
+	file: A20140225T222920 rightbracket_en.png
+	file: A20140323T162410 rightbracket_jp.png
+	file: A20140406T000309 rightbracket_ko.png
+	file: A20140224T232548 rightbracket_tw.png
+	file: A20141004T122432 space.png
+	file: M20141011T164358 symbol-font
+package:
+	name: yugioh.mse-game
+	version: 2014-01-01
+	status: 34
+	file: M20141011T085202 auto_replace
+	file: M20141011T163325 card_fields
+	file: M20141011T090605 game
+	file: A20141004T123413 icon.png
+	file: A20141004T123414 icons/cn.png
+	file: A20141004T123414 icons/image.png
+	file: A20141004T123414 icons/jp.png
+	file: A20141011T091025 icons/ko.png
+	file: A20141004T123414 icons/none.png
+	file: A20141004T123414 icons/text.png
+	file: A20141004T123415 icons/usgb.png
+	file: M20141011T084923 packs
+	file: M20141011T150019 script
+	file: M20141011T094350 set_fields
+	file: A20141011T084703 word/word_lists_chs
+	file: A20141011T084659 word/word_lists_cht
+	file: A20141011T084802 word/word_lists_en
+	file: A20141011T084730 word/word_lists_jp
+	file: A20141011T084739 word/word_lists_ko

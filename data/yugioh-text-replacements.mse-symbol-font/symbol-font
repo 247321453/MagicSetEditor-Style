@@ -1,0 +1,67 @@
+﻿mse version: 2.0.0
+version: 2014-10-10
+short name: Text Replacements
+position hint: 001
+icon: n1.png
+installer group: Yugioh/Symbol Fonts/Text Replacements
+# Symbol font for missing characters
+
+depends on:
+	package: yugioh-standard-levels.mse-symbol-font
+	version: 2007-10-27
+	
+image font size: 16
+horizontal space: 2
+
+symbol:
+	code: @
+	image: n2.png
+symbol:
+	code: #
+	image: n3.png
+symbol:
+	code: $
+	image: n4.png
+symbol:
+	code: %
+	image: n5.png
+symbol:
+	code: |
+	image: n1.png
+symbol:
+	code: ^
+	image: space.png
+symbol:
+	code: &
+	image: infinity.png
+
+symbol:
+	code: [
+	image: { "/yugioh-standard-levels.mse-symbol-font/leftbracket_"+get_lang()+".png" }
+symbol:
+	code: ]
+	image: { "/yugioh-standard-levels.mse-symbol-font/rightbracket_"+get_lang()+".png" }
+symbol:
+	code: ?
+	image: qmark.png
+symbol:
+	code: *
+	image: dot.png
+# symbol:
+# 	code: =
+# 	image: dot2.png
+	
+##############################################################
+# Insert-symbol menu
+insert symbol menu:
+	item: [
+	item: ]
+# 	item: =
+	item: ^
+	item: ?
+	item: *
+	item: |
+	item: @
+	item: #
+	item: $
+	item: %
