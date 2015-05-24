@@ -202,7 +202,7 @@ data/yugioh.mse-game/card_fields	450af3823c359883054ff1863968ea67
 data/yugioh.mse-game/game	32271e19abcc8f33ea81e42880f3d1f5
 data/yugioh.mse-game/icon.png	287a236e1dab6ed9e7fa97a0e7c0ce19
 data/yugioh.mse-game/packs	f7f8e490c4e1db6b775a485a00b351ce
-data/yugioh.mse-game/script	368f486acaaadf1bf1ebeae90837865c
+data/yugioh.mse-game/script	57129226b588fcefccb44df87342cce1
 data/yugioh.mse-game/set_fields	a7b7d838d9555c9eb04c87173dc12785
 data/yugioh.mse-game/icons/cn.png	dacb2ca8023c862a31db15312ae2b4c5
 data/yugioh.mse-game/icons/image.png	06b9eb5362a3410417fa3bf5cdc19f6b
@@ -226,8 +226,8 @@ font/fonts-common.zip	09586aeb09ad47a744632a934b2a4b09
 font/fonts-jp.zip	1cd5aa21f90c7a463e52938c039f19d1
 font/fonts-tw.zip	d4ca4f877edcd92433e78d8b4c5f2960
 update/delete.txt	c9b2ae557a77257e12e9a5599336afeb
-update/filelist.txt	80f2209bc5a2e14d443ba189d4c7d4ca
+update/filelist.txt	9d35b2044c4864a18b007c4e82c39fd6
 update/readme.txt	e1555d90b56d941bcc2187baf892e071
 update/rename.txt	cbfaccc657e73040ec051233017b2c4d
 update/update-server.bat	906682e2c43e33f9f06a058cea7da7bf
-update/version.txt	cf0863a2d007121077f9fa11f479d3e1
+update/version.txt	876168d5dd48e1c76e5413a551d66815

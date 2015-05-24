@@ -134,10 +134,10 @@
 			contents: { if card.name=="" then "CARDNAME" else card.name }
 			) +
 		# step 4 : symbols
-		# replace_rule(
-		# 	match: "[|!|@|#|$|%|^|&|*|?|=|]",
-		# 	replace: "<sym-auto>&</sym-auto>" 
-		# 	)+
+		 replace_rule(
+		 	match: "[|!|@|#|$|%|^|&|*|?|=|]",
+		 	replace: "<sym-auto>&</sym-auto>" 
+		 	)+
 		replace_rule(
 			match: "[[:blank:]]",
 			replace: "<sym-auto>^</sym-auto>" 
