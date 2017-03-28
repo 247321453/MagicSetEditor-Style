@@ -139,6 +139,7 @@ card style:
 			fusion monster: card-fusion.png
 			token monster: card-token.png
 			xyz monster: card-xyz.png
+			link monster: card-link.png
 			obelisk: card-obelisk.png
 			slifer: card-slifer.png
 			ra: card-ra.png
@@ -318,6 +319,7 @@ card style:
 							else 8
 						else 8
 					else 8
+		visible: script: if is_link() then false else true
 	############################# Image
 	image:
 		left:
@@ -440,9 +442,9 @@ card style:
 		line height line max: 1.1
 	############################# Attack/Defense
 	attack:
-		left: 244
+		left: 263.5
 		top: 553.6
-		width: 56
+		width: 38
 		height: 21.5
 		z index: 3
 		alignment: right middle
@@ -457,9 +459,9 @@ card style:
 			size: 3
 		visible: script: if is_nmonster() then false else true
 	defense:
-		left: 329.5
+		left: 350
 		top: 553.6
-		width: 56
+		width: 38
 		height: 21.5
 		z index: 3
 		alignment: right middle
@@ -472,7 +474,113 @@ card style:
 			name: yugioh-text-replacements
 			alignment: middle center
 			size: 3
-		visible: script: if is_nmonster() then false else true
+		visible: script: if is_nmonster() or is_link() then false else true
+	###################### Link
+	link number:
+		left: 375.5
+		top: 553.6
+		height: 21.5
+		width: 12
+		z index: 3
+		alignment: right middle
+		font:
+			name: Eurostile Candy W01 Semibold
+			size: 12.5
+			color: rgb(20,20,20)
+		symbol font:
+			name: yugioh-text-replacements
+			alignment: shrink-overflow middle center
+			size: 7
+		visible: script: if is_nmonster() or not is_link() then false else true
+	###################### Link markers
+	Link Marker Up:
+		left: 163.5
+		top: 89.5
+		width: 93.5
+		height: 22.5
+		z index: 5
+		render style: image
+		popup style: in place
+		choice images: 
+			yes: link_marker_u.png
+		visible: script: if is_link() then true else false
+	Link Marker UL:
+		left: 36.5
+		top: 97
+		width: 38
+		height: 38
+		z index: 5
+		render style:image
+		popup style: in place
+		choice images: 
+			yes: link_marker_ul.png
+		visible: script: if is_link() then true else false
+	Link Marker UR:
+		left: 347.5
+		top: 97
+		width: 38
+		height: 38
+		z index: 5
+		render style:image
+		popup style: in place
+		choice images: 
+			yes: link_marker_ur.png
+		visible: script: if is_link() then true else false
+	Link Marker Down:
+		left: 164
+		top: 429.5
+		width: 93.5
+		height: 22.5
+		z index: 5
+		render style:image
+		popup style: in place
+		choice images: 
+			yes: link_marker_d.png
+		visible: script: if is_link() then true else false
+	Link Marker DL:
+		left: 36.5
+		top: 406.5
+		width: 38
+		height: 38
+		z index: 5
+		render style:image
+		popup style: in place
+		choice images: 
+			yes: link_marker_dl.png
+		visible: script: if is_link() then true else false
+	Link Marker DR:
+		left: 347
+		top: 406.5
+		width: 38
+		height: 38
+		z index: 5
+		render style:image
+		popup style: in place
+		choice images: 
+			yes: link_marker_dr.png
+		visible: script: if is_link() then true else false
+	Link Marker Left:
+		left: 29
+		top: 224
+		width: 22.5
+		height: 93.5
+		z index: 5
+		render style:image
+		popup style: in place
+		choice images: 
+			yes: link_marker_l.png
+		visible: script: if is_link() then true else false
+	Link Marker Right:
+		left: 370.5
+		top: 224
+		width: 22.5
+		height: 93.5
+		z index: 5
+		render style:image
+		popup style: in place
+		choice images: 
+			yes: link_marker_r.png
+		visible: script: if is_link() then true else false
 	############################# Card sorting / numbering
 	############################# Copyright stuff
 	rarity:
@@ -520,9 +628,9 @@ card style:
 	###################### pendulum
 	pendulum:
 		left: 14.5
-		top: 273
+		top: 316.5
 		width: 392
-		height: 175
+		height: 86
 		z index: -1
 		render style:image list
 		popup style: in place
@@ -794,7 +902,7 @@ extra card style:
 		render style:image list
 		choice images:
 			bg: pendulum/pendulum.png
-		visible: script: if is_nopendulum() then false else true
+		visible: script: if is_nopendulum() or is_link() then false else true
 	bar:
 		left: 35
 		top : 554

@@ -12,6 +12,7 @@ card field:
 	choice: fusion monster
 	choice: token monster
 	choice:	xyz monster
+	choice: link monster
 	choice: obelisk
 	choice: slifer
 	choice: ra
@@ -237,6 +238,63 @@ card field:
 	name: pendulum scale 2
 	save value: true
 	show statistics: false
+############################# Link Markers
+card field:
+	type: choice
+	name: Link Marker Up
+	choice: none
+	choice: yes
+	save value: yes
+	show statistics: false
+card field:
+	type: choice
+	name: Link Marker UL
+	choice: none
+	choice: yes
+	save value: yes
+	show statistics: false
+card field:
+	type: choice
+	name: Link Marker UR
+	choice: none
+	choice: yes
+	save value: yes
+	show statistics: false
+card field:
+	type: choice
+	name: Link Marker Down
+	choice: none
+	choice: yes
+	save value: yes
+	show statistics: false
+card field:
+	type: choice
+	name: Link Marker DL
+	choice: none
+	choice: yes
+	save value: yes
+	show statistics: false
+card field:
+	type: choice
+	name: Link Marker DR
+	choice: none
+	choice: yes
+	save value: yes
+	show statistics: false
+card field:
+	type: choice
+	name: Link Marker Left
+	choice: none
+	choice: yes
+	save value: yes
+	show statistics: false
+card field:
+	type: choice
+	name: Link Marker Right
+	choice: none
+	choice: yes
+	save value: yes
+	show statistics: false
 ############################# Attack/Defense
 card field:
 	type: text
@@ -258,6 +316,16 @@ card field:
 	card list width: 33
 	card list name: DEF
 	description: & = unlimited 无限
+############################ Link
+card field:
+	type: text
+	name: link number
+	save value: true
+	script: a_and_d_filter(value)
+	card list visible: true
+	card list column: 5
+	card list name: Link
+	card list width: 33
 ############################# Copyright stuff
 card field:
 	type: choice
