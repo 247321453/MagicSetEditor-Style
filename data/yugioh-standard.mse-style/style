@@ -324,16 +324,16 @@ card style:
 	image:
 		left:
 			script:
-				if is_transparent() then if is_pendulum() then 29.5 else 14
+				if is_transparent() then if is_pendulum() then 28.5 else 14
 				else if image_noframe() and is_nopendulum() then 44
 				else if is_nopendulum() then 51.6
-				else 29.5
+				else 28.5
 		top:
 			script:
-				if is_transparent() then if is_pendulum() then 108 else 14
+				if is_transparent() then if is_pendulum() then 107.5 else 14
 				else if image_noframe() and is_nopendulum() then 105
 				else if is_nopendulum() then 113
-				else 108
+				else 107.5
 		width:
 			script:
 				if is_transparent() then if is_pendulum() then 363 else 393
