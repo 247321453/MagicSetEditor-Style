@@ -353,6 +353,7 @@ card style:
 				else if is_small_pend() then  345
 				else 317
 		z index: 1
+		mask: {if is_link() then "mask-link.png"}
 	############################# Card type
 	monster type:
 		left: { if is_jp() then 32 else 34 }
