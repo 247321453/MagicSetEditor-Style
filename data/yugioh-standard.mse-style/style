@@ -495,9 +495,9 @@ card style:
 	###################### Link markers
 	Link Marker Up:
 		left: 163.5
-		top: 89.5
-		width: 93.5
-		height: 22.5
+		top: 90.5
+		width: 91.5
+		height: {if is_link() then 22.5 else 0}
 		z index: 5
 		render style: image
 		popup style: in place
@@ -505,10 +505,10 @@ card style:
 			yes: link_marker_u.png
 		visible: script: if is_link() then true else false
 	Link Marker UL:
-		left: 36.5
-		top: 97
-		width: 38
-		height: 38
+		left: 36
+		top: 98.5
+		width: {if is_link() then 39 else 0}
+		height: {if is_link() then 39 else 0}
 		z index: 5
 		render style:image
 		popup style: in place
@@ -517,9 +517,9 @@ card style:
 		visible: script: if is_link() then true else false
 	Link Marker UR:
 		left: 347.5
-		top: 97
-		width: 38
-		height: 38
+		top: 98.5
+		width: {if is_link() then 39 else 0}
+		height: {if is_link() then 39 else 0}
 		z index: 5
 		render style:image
 		popup style: in place
@@ -527,10 +527,10 @@ card style:
 			yes: link_marker_ur.png
 		visible: script: if is_link() then true else false
 	Link Marker Down:
-		left: 164
-		top: 429.5
-		width: 93.5
-		height: 22.5
+		left: 163.5
+		top: 435
+		width: 91.5
+		height: {if is_link() then 22.5 else 0}
 		z index: 5
 		render style:image
 		popup style: in place
@@ -538,10 +538,10 @@ card style:
 			yes: link_marker_d.png
 		visible: script: if is_link() then true else false
 	Link Marker DL:
-		left: 36.5
-		top: 406.5
-		width: 38
-		height: 38
+		left: 36
+		top: 408.5
+		width: {if is_link() then 39 else 0}
+		height: {if is_link() then 39 else 0}
 		z index: 5
 		render style:image
 		popup style: in place
@@ -549,10 +549,10 @@ card style:
 			yes: link_marker_dl.png
 		visible: script: if is_link() then true else false
 	Link Marker DR:
-		left: 347
-		top: 406.5
-		width: 38
-		height: 38
+		left: 347.5
+		top: 408.5
+		width: {if is_link() then 39 else 0}
+		height: {if is_link() then 39 else 0}
 		z index: 5
 		render style:image
 		popup style: in place
@@ -560,9 +560,9 @@ card style:
 			yes: link_marker_dr.png
 		visible: script: if is_link() then true else false
 	Link Marker Left:
-		left: 29
-		top: 224
-		width: 22.5
+		left: 29.5
+		top: 225.5
+		width:{if is_link() then 22.5 else 0}
 		height: 93.5
 		z index: 5
 		render style:image
@@ -571,9 +571,9 @@ card style:
 			yes: link_marker_l.png
 		visible: script: if is_link() then true else false
 	Link Marker Right:
-		left: 370.5
-		top: 224
-		width: 22.5
+		left: 371.5
+		top: 225.5
+		width: {if is_link() then 22.5 else 0}
 		height: 93.5
 		z index: 5
 		render style:image
