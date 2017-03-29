@@ -3,6 +3,7 @@
 	is_12star :={ remove_tags(card.level) == "************" }
 	is_13star :={ remove_tags(card.level) == "*************" }	
 	is_blmonster := {card.card_type == "dark synchro monster" or card.card_type == "xyz monster"}
+	is_link := {card.card_type == "link monster"}
 	is_tw := { set.language == "TW" }
 	is_cn := { set.language == "CN" }
 	is_en := { set.language == "EN" }
