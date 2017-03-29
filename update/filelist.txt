@@ -1,4 +1,4 @@
-﻿download.bat	b1f5d2f80a611e8b612f84773536c772
+﻿download.bat	d1c992076cc70ef6b984e9673b70d514
 fix don't open.bat	50e92b9e76dec9b7eeba085185aa800d
 magicseteditor	532d2ad3e8b44bee4d7f51e8c42fe306
 mse.com	703a80e5519325d46a1775417bda8ded
@@ -386,8 +386,9 @@ resource/tool/window_set_info.png	53246caa0e7a22a7e152770c94c07246
 resource/tool/window_statistics.png	a11eed0bf96e8ac43c62790654329d58
 resource/tool/window_style.png	3e18ec926d15c2a6e6b7aae59b2f5273
 update/delete.txt	c9b2ae557a77257e12e9a5599336afeb
-update/filelist.txt	07dc6713feeab741e352f32bf7260776
+update/filelist.txt	f18022e532eb117737ee2ed231e96923
 update/readme.txt	e1555d90b56d941bcc2187baf892e071
 update/rename.txt	cbfaccc657e73040ec051233017b2c4d
 update/update-server.bat	906682e2c43e33f9f06a058cea7da7bf
-update/version.txt	f647ed6f5d73ceca4b8b43e539277e5d
+update/version.txt	e8d9330da6a99b677274bcc36d520995
+update/version_new.txt	e8d9330da6a99b677274bcc36d520995
