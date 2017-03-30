@@ -128,7 +128,7 @@ data/yugioh-standard.mse-style/link_marker_ul.png	ccd25c0ca28bd5f1cd93ac5fae14f1
 data/yugioh-standard.mse-style/link_marker_ur.png	4673ab996638299dada08aa4ae06ab33
 data/yugioh-standard.mse-style/mask-link.png	dacf92de79b118299e0d15fbdc766072
 data/yugioh-standard.mse-style/name.png	2c58ba411d6615829fb2a313c7f7a33b
-data/yugioh-standard.mse-style/style	8d3c6be24662c10922d967b3c5443838
+data/yugioh-standard.mse-style/style	d44133af150dd750575defc04ddbe289
 data/yugioh-standard.mse-style/attribute/dark_cn.png	3c9548650ef3952fce81cda050089ca9
 data/yugioh-standard.mse-style/attribute/dark_en.png	475f0048280e1b2d8239285a902ad9c8
 data/yugioh-standard.mse-style/attribute/dark_jp.png	724e65c91c1fc2d1fae24f7786dcba99
@@ -386,8 +386,8 @@ resource/tool/window_set_info.png	53246caa0e7a22a7e152770c94c07246
 resource/tool/window_statistics.png	a11eed0bf96e8ac43c62790654329d58
 resource/tool/window_style.png	3e18ec926d15c2a6e6b7aae59b2f5273
 update/delete.txt	c9b2ae557a77257e12e9a5599336afeb
-update/filelist.txt	71c60a1c5686104feadf53bc95586ae8
+update/filelist.txt	f49db27d0aa490e0b5cbc7c8635c9ef2
 update/readme.txt	e1555d90b56d941bcc2187baf892e071
 update/rename.txt	cbfaccc657e73040ec051233017b2c4d
 update/update-server.bat	906682e2c43e33f9f06a058cea7da7bf
-update/version.txt	34dc2304067cfa9e9ce517cba53c6b3a
+update/version.txt	2609daee8db563aebe3a396aa5ef4783
