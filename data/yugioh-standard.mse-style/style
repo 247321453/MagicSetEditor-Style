@@ -444,7 +444,7 @@ card style:
 	############################# Attack/Defense
 	attack:
 		left: 263.5
-		top: 553.6
+		top: 554
 		width: 38
 		height: 21.5
 		z index: 3
@@ -452,7 +452,7 @@ card style:
 		font:
 			name: MatrixBoldSmallCaps
 			italic name: Matrix-Bold
-			size: 14
+			size: 14.5
 			color: rgb(32,32,32)
 		symbol font:
 			name: yugioh-text-replacements
@@ -461,7 +461,7 @@ card style:
 		visible: script: if is_nmonster() then false else true
 	defense:
 		left: 350
-		top: 553.6
+		top: 554
 		width: 38
 		height: 21.5
 		z index: 3
@@ -469,7 +469,7 @@ card style:
 		font:
 			name: MatrixBoldSmallCaps
 			italic name: Matrix-Bold
-			size: 14
+			size: 14.5
 			color: rgb(32,32,32)
 		symbol font:
 			name: yugioh-text-replacements
