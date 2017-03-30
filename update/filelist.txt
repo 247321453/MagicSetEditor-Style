@@ -96,7 +96,7 @@ data/yugioh-standard.mse-style/border.png	63146d0944af09d295c94ef770a8d352
 data/yugioh-standard.mse-style/card-dsynchro.png	02a541cbb363474b9ec884163451a9b2
 data/yugioh-standard.mse-style/card-effect.png	d7f1bfd8f29f012c1817060977a3b689
 data/yugioh-standard.mse-style/card-fusion.png	bb89ddac6ac62a8f7f6b8c2f5250076e
-data/yugioh-standard.mse-style/card-link.png	f17151f2243f9024123e997345198c1a
+data/yugioh-standard.mse-style/card-link.png	9bdc0462333753545685d0e314a8a83d
 data/yugioh-standard.mse-style/card-normal.png	601504a7dc2303aeb4cd87a01d3453c6
 data/yugioh-standard.mse-style/card-obelisk.png	1b0c491f2c3ae8cc432000bff3979121
 data/yugioh-standard.mse-style/card-ra.png	3b453654fa29c92f2642656f3623b1f2
@@ -126,9 +126,9 @@ data/yugioh-standard.mse-style/link_marker_r.png	2ee728a4c65d8209cd6cfcf072d1b01
 data/yugioh-standard.mse-style/link_marker_u.png	a398d4ef22710e955af2937b62b87d12
 data/yugioh-standard.mse-style/link_marker_ul.png	ccd25c0ca28bd5f1cd93ac5fae14f167
 data/yugioh-standard.mse-style/link_marker_ur.png	4673ab996638299dada08aa4ae06ab33
-data/yugioh-standard.mse-style/mask-link.png	71ea487e701f606f0c38932e3a7dab30
+data/yugioh-standard.mse-style/mask-link.png	dacf92de79b118299e0d15fbdc766072
 data/yugioh-standard.mse-style/name.png	2c58ba411d6615829fb2a313c7f7a33b
-data/yugioh-standard.mse-style/style	286180a0a16aa894debead3359f3ae5c
+data/yugioh-standard.mse-style/style	8d3c6be24662c10922d967b3c5443838
 data/yugioh-standard.mse-style/attribute/dark_cn.png	3c9548650ef3952fce81cda050089ca9
 data/yugioh-standard.mse-style/attribute/dark_en.png	475f0048280e1b2d8239285a902ad9c8
 data/yugioh-standard.mse-style/attribute/dark_jp.png	724e65c91c1fc2d1fae24f7786dcba99
@@ -270,7 +270,7 @@ resource/combine_sub.png	af70230f03e9a54b9646c62be13502a1
 resource/combine_sub_dark.png	7d17d714f03b0aa468b7e4639efdd503
 resource/combine_xor.png	27d42718e5a28c28223515638bd86c7d
 resource/edit_symbol.png	dbc0b0690b14b5cde239cc22c948b501
-resource/expected_locale_keys	4f5335584f4538cc6fe8fde0bbb494c1
+resource/expected_locale_keys	827ea88f9262d6b900b3196a57d5882e
 resource/handle_center.png	97e93908b2f6bbd6933e35a25acb70f9
 resource/handle_rotate.png	4ed7ef1964d06c508c050889b356ba6a
 resource/handle_shear_x.png	216ca810defeefa3acbea8a9fef1e3a0
@@ -386,9 +386,8 @@ resource/tool/window_set_info.png	53246caa0e7a22a7e152770c94c07246
 resource/tool/window_statistics.png	a11eed0bf96e8ac43c62790654329d58
 resource/tool/window_style.png	3e18ec926d15c2a6e6b7aae59b2f5273
 update/delete.txt	c9b2ae557a77257e12e9a5599336afeb
-update/filelist.txt	f18022e532eb117737ee2ed231e96923
+update/filelist.txt	71c60a1c5686104feadf53bc95586ae8
 update/readme.txt	e1555d90b56d941bcc2187baf892e071
 update/rename.txt	cbfaccc657e73040ec051233017b2c4d
 update/update-server.bat	906682e2c43e33f9f06a058cea7da7bf
-update/version.txt	e8d9330da6a99b677274bcc36d520995
-update/version_new.txt	e8d9330da6a99b677274bcc36d520995
+update/version.txt	34dc2304067cfa9e9ce517cba53c6b3a
