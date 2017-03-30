@@ -25,6 +25,7 @@ word list:
 	word: 幻神兽族
 	word: 创造神族
 	word: 幻龙族
+	word: 电子界
 word list:
 	name: CNeffect
 	word: 同调
@@ -32,7 +33,9 @@ word list:
 	word: 融合
 	word: 仪式
 	word: 效果
+	word: 连接
 	word: 调整
+	word: 连接
 	word: 灵魂
 	word: 卡通
 	word: 二重

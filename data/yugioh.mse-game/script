@@ -11,6 +11,7 @@
 	is_ko := { set.language == "KO" }
 
 	hide_gamecode := {set.hide_gamecode == "yes"}
+	hide_foil := {set.hide_foil == "yes"}
 	st_has_text :={ set.ST_mark_is_text=="yes"}
 	
 	get_sep := {if is_en() or is_ko() then " / " else if is_cn()then "<i>／</i>" else "／" }

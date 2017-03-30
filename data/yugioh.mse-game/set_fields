@@ -12,7 +12,7 @@ set field:
 set field:
 	type: choice
 	name: language
-	initial: TW
+	initial: EN
 	choice: CN
 	choice: TW
 	choice: JP
@@ -22,12 +22,12 @@ set field:
 set field:
 	type: text
 	name: edition
-	default: "AM Edition"
+	default: "LIMITED Edition"
 	description: such as "DUEL TERMINAL"
 set field:
 	type: text
 	name: author
-	default: "Your Name"
+	default: "AntiMetaman"
 	description: 247321453
 set field:
 	type: text
@@ -58,9 +58,29 @@ set field:
 	initial: no
 set field:
 	type: boolean
+	name: hide copyright
+	description: 隐藏密码，最好先写好密码，再导出的时候再设置这个
+	initial: no
+set field:
+	type: boolean
+	name: hide edition
+	description: 隐藏密码，最好先写好密码，再导出的时候再设置这个
+	initial: no
+set field:
+	type: boolean
+	name: hide number
+	description: 隐藏密码，最好先写好密码，再导出的时候再设置这个
+	initial: false
+set field:
+	type: boolean
+	name: hide foil
+	description: 隐藏密码，最好先写好密码，再导出的时候再设置这个
+	initial: false
+set field:
+	type: boolean
 	name: ST mark is text
 	description: 魔法陷阱的符号带标志文字？用于OCG制作
-	initial: no
+	initial: yes
 set field:
 	type: boolean
 	name: copyright images
@@ -70,7 +90,7 @@ set field:
 	type: boolean
 	name: pendulum image is small
 	description: pendulum image is small? Pendulum怪兽的中间图，不包含P的描述区域？用于YGOCORE
-	initial: no
+	initial: yes
 ############################# Default style
 default set style:
 	Set Options:
