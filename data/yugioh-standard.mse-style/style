@@ -164,14 +164,14 @@ card style:
 		width:
 			script:
 				if foil_is_full() then 421
-				else if is_transparent() then 392
+				else if is_transparent() then 393
 				else if image_noframe() and is_nopendulum() then 332
 				else if is_nopendulum() then 320
 				else 365.5
 		height:
 			script:
 				if foil_is_full() then 614
-				else if is_transparent() then 585
+				else if is_transparent() then 586
 				else if image_noframe() and is_nopendulum() then 332
 				else if is_big_pend() then  273
 				else if is_medium_pend() then  273
@@ -314,7 +314,7 @@ card style:
 	image:
 		left:
 			script:
-<<<<<<< HEAD
+
 				if is_transparent() then if is_pendulum() then 29 else 14
 				else if image_noframe() and is_nopendulum() then 45.5
 				else if is_nopendulum() then 51
@@ -325,7 +325,7 @@ card style:
 				else if image_noframe() and is_nopendulum() then 107.5
 				else if is_nopendulum() then 112.5
 				else 109.5
-=======
+
 				if is_transparent() then if is_pendulum() then 28.5 else 14
 				else if image_noframe() and is_nopendulum() then 44
 				else if is_nopendulum() then 50
@@ -336,13 +336,13 @@ card style:
 				else if image_noframe() and is_nopendulum() then 105
 				else if is_nopendulum() then 112
 				else 106.5
->>>>>>> origin/master
+
 		width:
 			script:
 				if is_transparent() then if is_pendulum() then 365.5 else 392
 				else if image_noframe() and is_nopendulum() then 332
 				else if is_nopendulum() then 320
-<<<<<<< HEAD
+
 				else 365.5
 		height:
 			script:
@@ -357,22 +357,6 @@ card style:
 				else if is_small_pend() then  344.5
 				else 320
 		z index: -1
-=======
-				else 363
-		height:
-			script:
-				if is_transparent() then if is_pendulum() then 466 else 582
-				else if image_noframe() and is_nopendulum() then 330
-				else if is_nopendulum() then 320
-				else if pend_image_is_small() and is_big_pend() then  275
-				else if pend_image_is_small() and is_medium_pend() then  275
-				else if pend_image_is_small() and is_small_pend() then  298
-				else if is_big_pend() then  360
-				else if is_medium_pend() then  345
-				else if is_small_pend() then  345
-				else 320
-		z index: 1
->>>>>>> origin/master
 		mask: {if is_link() then "mask-link.png"}
 	############################# Card type
 	monster type:
