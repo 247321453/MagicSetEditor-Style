@@ -133,6 +133,11 @@ card field:
 	default: if contains(card.type2, match:get_sep()) then split_text(match:get_sep(), card.type2).2 else "" # Remove when card.type2 is removed.
 card field:
 	type: text
+	name: type 5
+	script: card_class_filter(value)
+	default: if contains(card.type2, match:get_sep()) then split_text(match:get_sep(), card.type3).3 else "" # Remove when card.type2 is removed.
+card field:
+	type: text
 	name: monster type
 	description: If no Comobox, please input space.如果看不到下拉框，请输入空格
 	script:
@@ -148,6 +153,8 @@ card field:
 			field3: card.type_3,
 			separator3: get_sep(),
 			field4: card.type_4,
+			separator4: get_sep(),
+			field5: card.type_5,
 			soft_before_empty: true,
 			hide_when_empty: true
 		)
@@ -160,6 +167,8 @@ card field:
 			field3: card.type_3,
 			separator3: get_sepex(card.type_4),
 			field4: card.type_4,
+			separator4: get_sepex(card.type_5),
+			field5: card.type_5,
 			prefix: if remove_tags(card.type_1)=="    " then "" else if is_jp() then "【" else if is_en() then "[" else "<sym-auto>[</sym-auto>",
 			suffix: if remove_tags(card.type_1)=="    " then "" else if is_jp() then "】" else if is_en() then "]" else "<sym-auto>]</sym-auto>",
 			soft_before_empty: true,
@@ -391,6 +400,13 @@ card field:
 	show statistics: false
 	editable: false
 	default: small_type(card.type_4)
+	save value: false
+card field:
+	type: text
+	name: small type 5
+	show statistics: false
+	editable: false
+	default: small_type(card.type_5)
 	save value: false
 ############################
 card field:

@@ -1,7 +1,5 @@
 @echo off
-cd update
-echo check...
+cd /d "%~dp0/update"
 if exist update_new.exe move /y update_new.exe update.exe
-echo start download
-update.exe
-pause
+start update.exe -d "%~dp0" "https://github.com/247321453/MagicSetEditor2/raw/master/"
+exit
