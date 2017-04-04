@@ -159,8 +159,8 @@ card style:
 				if foil_is_full() then 0 
 				else if is_transparent() then 14
 				else if image_noframe() and is_nopendulum() then 107.5
-				else if is_nopendulum() then 112
-				else 112
+				else if is_nopendulum() then 113
+				else 113
 		width:
 			script:
 				if foil_is_full() then 421
@@ -173,9 +173,12 @@ card style:
 				if foil_is_full() then 614
 				else if is_transparent() then 586
 				else if image_noframe() and is_nopendulum() then 332
-				else if is_big_pend() then  273
-				else if is_medium_pend() then  273
-				else if is_small_pend() then  293.5
+				else if pend_image_is_small() and is_big_pend() then  276.5
+				else if pend_image_is_small() and is_medium_pend() then  276.5
+				else if pend_image_is_small() and is_small_pend() then  297
+				else if is_big_pend() then  360.5
+				else if is_medium_pend() then  344.5
+				else if is_small_pend() then  344.5
 				else 320
 		z index: 5
 		render style: image
@@ -334,7 +337,7 @@ card style:
 			script:
 				if is_transparent() then if is_pendulum() then 106.5 else 14
 				else if image_noframe() and is_nopendulum() then 105
-				else if is_nopendulum() then 112
+				else if is_nopendulum() then 113
 				else 106.5
 
 		width:
@@ -349,9 +352,9 @@ card style:
 				if is_transparent() then if is_pendulum() then 466 else 585
 				else if image_noframe() and is_nopendulum() then 332
 				else if is_nopendulum() then 320
-				else if pend_image_is_small() and is_big_pend() then  273
-				else if pend_image_is_small() and is_medium_pend() then  273
-				else if pend_image_is_small() and is_small_pend() then  293.5
+				else if pend_image_is_small() and is_big_pend() then  277
+				else if pend_image_is_small() and is_medium_pend() then  277
+				else if pend_image_is_small() and is_small_pend() then  297.5
 				else if is_big_pend() then  360.5
 				else if is_medium_pend() then  344.5
 				else if is_small_pend() then  344.5
@@ -477,16 +480,16 @@ card style:
 		visible: script: if is_nmonster() or is_link() then false else true
 	###################### Link
 	link number:
-		left: 375.5
+		left: 374
 		top: 562
-		height: 11.5
-		width: 12
+		height: 12
+		width: 13
 		z index: 3
-		alignment: right middle
+		alignment: right bottom stretch
 		font:
-			name: Eurostile Candy W01 Semibold
-			size: 11.5
-			color: rgb(20,20,20)
+			name: Matrix-Bold
+			size: 16
+			color: rgb(0,0,0)
 		symbol font:
 			name: yugioh-text-replacements
 			alignment: shrink-overflow middle center
@@ -494,9 +497,9 @@ card style:
 		visible: script: if is_nmonster() or not is_link() then false else true
 	###################### Link markers
 	Link Marker Up:
-		left: 163.5
-		top: 90.5
-		width: 91.5
+		left: 175
+		top: 91
+		width: 73
 		height: {if is_link() then 22.5 else 0}
 		z index: 5
 		render style: image
@@ -505,10 +508,10 @@ card style:
 			yes: link_marker_u.png
 		visible: script: if is_link() then true else false
 	Link Marker UL:
-		left: 36
+		left: 35.5
 		top: 98.5
-		width: {if is_link() then 39 else 0}
-		height: {if is_link() then 39 else 0}
+		width: {if is_link() then 38 else 0}
+		height: {if is_link() then 38 else 0}
 		z index: 5
 		render style:image
 		popup style: in place
@@ -516,10 +519,10 @@ card style:
 			yes: link_marker_ul.png
 		visible: script: if is_link() then true else false
 	Link Marker UR:
-		left: 347.5
+		left: 348
 		top: 98.5
-		width: {if is_link() then 39 else 0}
-		height: {if is_link() then 39 else 0}
+		width: {if is_link() then 38 else 0}
+		height: {if is_link() then 38 else 0}
 		z index: 5
 		render style:image
 		popup style: in place
@@ -527,14 +530,9 @@ card style:
 			yes: link_marker_ur.png
 		visible: script: if is_link() then true else false
 	Link Marker Down:
-<<<<<<< HEAD
-		left: 165
+		left: 175
 		top: 433
-=======
-		left: 163.5
-		top: 430
->>>>>>> origin/master
-		width: 91.5
+		width: 73
 		height: {if is_link() then 22.5 else 0}
 		z index: 5
 		render style:image
@@ -543,10 +541,10 @@ card style:
 			yes: link_marker_d.png
 		visible: script: if is_link() then true else false
 	Link Marker DL:
-		left: 36
-		top: 408.5
-		width: {if is_link() then 39 else 0}
-		height: {if is_link() then 39 else 0}
+		left: 35.5
+		top: 412
+		width: {if is_link() then 38 else 0}
+		height: {if is_link() then 38 else 0}
 		z index: 5
 		render style:image
 		popup style: in place
@@ -554,10 +552,10 @@ card style:
 			yes: link_marker_dl.png
 		visible: script: if is_link() then true else false
 	Link Marker DR:
-		left: 347.5
-		top: 408.5
-		width: {if is_link() then 39 else 0}
-		height: {if is_link() then 39 else 0}
+		left: 348
+		top: 412
+		width: {if is_link() then 38 else 0}
+		height: {if is_link() then 38 else 0}
 		z index: 5
 		render style:image
 		popup style: in place
@@ -566,9 +564,9 @@ card style:
 		visible: script: if is_link() then true else false
 	Link Marker Left:
 		left: 29.5
-		top: 225.5
+		top: 239
 		width:{if is_link() then 22.5 else 0}
-		height: 93.5
+		height: 73
 		z index: 5
 		render style:image
 		popup style: in place
@@ -577,9 +575,9 @@ card style:
 		visible: script: if is_link() then true else false
 	Link Marker Right:
 		left: 371.5
-		top: 225.5
+		top: 239
 		width: {if is_link() then 22.5 else 0}
-		height: 93.5
+		height: 73
 		z index: 5
 		render style:image
 		popup style: in place
@@ -920,7 +918,7 @@ extra card style:
 			italic name: Matrix-Bold
 			size: 14
 			color: rgb(32,32,32)
-		visible: script: if is_pendulum() then false else if is_transparent() then true else false
+		visible: script: if is_pendulum() or is_nmonster() then false else if is_transparent() then true else false
 	defoverlay:
 		left: 294
 		top: 562
@@ -933,7 +931,7 @@ extra card style:
 			italic name: Matrix-Bold
 			size: 14
 			color: rgb(32,32,32)
-		visible: script: if is_pendulum() then false else if is_transparent() then true else false
+		visible: script: if is_pendulum() or is_nmonster() then false else if is_transparent() then true else false
 	copyright image:
 		left: 224
 		top : 584

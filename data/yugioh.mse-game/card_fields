@@ -355,7 +355,7 @@ card field:
 	choice: promo
 	card list visible: true
 	card list column: 7
-	description: Ratity.罕见度
+	description: Rarity.罕见度
 card field:
 	type: choice
 	name: corner foil
