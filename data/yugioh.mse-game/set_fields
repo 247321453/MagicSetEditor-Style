@@ -31,11 +31,6 @@ set field:
 	description: 247321453
 set field:
 	type: text
-	name: description
-	multi line: true
-	description: This information will not appear on the card.
-set field:
-	type: text
 	name: copyright
 	description: Copyright information. This will not appear on the card.
 set field:
