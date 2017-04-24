@@ -485,10 +485,10 @@ card style:
 		height: 12
 		width: 13
 		z index: 3
-		alignment: right bottom stretch
+		alignment: right middle stretch
 		font:
-			name: Matrix-Bold
-			size: 16
+			name: Eurostile Candy W01 Semibold
+			size: 12
 			color: rgb(0,0,0)
 		symbol font:
 			name: yugioh-text-replacements

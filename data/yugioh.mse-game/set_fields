@@ -22,7 +22,7 @@ set field:
 set field:
 	type: text
 	name: edition
-	default: "LIMITED Edition"
+	default: "LIMITED EDITION"
 	description: such as "DUEL TERMINAL"
 set field:
 	type: text
