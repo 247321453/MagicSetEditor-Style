@@ -275,7 +275,7 @@ card style:
 			spell: { "attribute/spell_"+get_lang_ex()+".png"}
 			trap: { "attribute/trap_"+get_lang_ex()+".png"}
 	level:
-		left: 44.5
+		left: 48
 		top : 76.5
 		height: 26
 		width: 331.5
@@ -321,32 +321,19 @@ card style:
 				if is_transparent() then if is_pendulum() then 29 else 14
 				else if image_noframe() and is_nopendulum() then 45.5
 				else if is_nopendulum() then 51
-				else 28
+				else 27.5
 		top:
 			script:
 				if is_transparent() then if is_pendulum() then 110 else 14
 				else if image_noframe() and is_nopendulum() then 107.5
 				else if is_nopendulum() then 112.5
 				else 109.5
-
-				if is_transparent() then if is_pendulum() then 28.5 else 14
-				else if image_noframe() and is_nopendulum() then 44
-				else if is_nopendulum() then 50
-				else 28.5
-		top:
-			script:
-				if is_transparent() then if is_pendulum() then 106.5 else 14
-				else if image_noframe() and is_nopendulum() then 105
-				else if is_nopendulum() then 113
-				else 106.5
-
 		width:
 			script:
-				if is_transparent() then if is_pendulum() then 365.5 else 392
+				if is_transparent() then if is_pendulum() then 368 else 392
 				else if image_noframe() and is_nopendulum() then 332
 				else if is_nopendulum() then 320
-
-				else 365.5
+				else 368
 		height:
 			script:
 				if is_transparent() then if is_pendulum() then 466 else 585
@@ -410,12 +397,12 @@ card style:
 			color: script: if is_pendulum() then rgb(0,0,0) else if is_blmonster() then rgb(255,255,255) else rgb(0,0,0)
 	############################# Text box
 	rule text:
-		left: 34
+		left: 33
 		top :
-			script: if is_nmonster() then 466 else if is_big_pend() then 495.5 else 480.5
+			script: if is_nmonster() then 464 else if is_big_pend() then 495.5 else 484
 		width: 353
 		height:
-			script: if is_nmonster() then 107.5 else if is_big_pend() then 59 else 77
+			script: if is_nmonster() then 107.5 else if is_big_pend() then 59 else 72
 		font:
 			name: 
 				script:
@@ -425,7 +412,7 @@ card style:
 					else if is_cn() then "方正隶变_GBK"
 					else "MatrixBook"
 			italic name: { if is_en() then "ITC Stone Serif Italic" else if is_tw() then "Yu-Gi-Oh! DFG Leisho 5" else "Yu-Gi-Oh! DFG Leisho 4" }
-			size: { if is_ko() then "10.5" else if is_en() then "11.5" else if is_tw() then "12" else "11.5"}
+			size: { if is_ko() then "10.5" else if is_en() then "10.5" else if is_tw() then "12" else "11.5"}
 			scale down to: 3
 			color: rgb(0,0,0)
 		symbol font:
@@ -446,7 +433,7 @@ card style:
 	############################# Attack/Defense
 	attack:
 		left: 265
-		top: 562
+		top: 563
 		width: 37
 		height: 13
 		z index: 3
@@ -463,7 +450,7 @@ card style:
 		visible: script: if is_nmonster() then false else true
 	defense:
 		left: 349
-		top: 562
+		top: 563
 		width: 37
 		height: 13
 		z index: 3
@@ -481,14 +468,14 @@ card style:
 	###################### Link
 	link number:
 		left: 374
-		top: 562
+		top: 563
 		height: 12
 		width: 13
 		z index: 3
 		alignment: right middle stretch
 		font:
 			name: Eurostile Candy W01 Semibold
-			size: 12
+			size: 13
 			color: rgb(0,0,0)
 		symbol font:
 			name: yugioh-text-replacements
@@ -631,7 +618,7 @@ card style:
 	###################### pendulum
 	pendulum:
 		left: 14.5
-		top: 316.5
+		top: 350
 		width: 392
 		height: 86
 		z index: -1
@@ -640,8 +627,8 @@ card style:
 		choice images:
 	pendulum text:
 		left: 66
-		top: script: if is_small_pend() then 404.5 else 391.5
-		width: script: if is_nopendulum() then 0 else 286.5
+		top: script: if is_small_pend() then 404.5 else 389
+		width: script: if is_nopendulum() then 0 else 288
 		height: script: if is_small_pend() then 47 else if is_big_pend() then 76 else 60
 		font:
 			name: 
