@@ -5,10 +5,10 @@ installer group: Yugioh/Series 10
 icon: card-sample.png
 position hint: 01
 
-version: 2017-04-21
+version: 2017-05-01
 depends on:
 	package: yugioh.mse-game
-	version: 2009-08-08
+	version: 2017-05-01
 
 card width: 421
 card height: 614
@@ -213,7 +213,7 @@ card style:
 					else if is_cn() then "方正隶变_GBK" 
 					else "MatrixRegularSmallCaps"
 			italic name: { if is_tw() then "Yu-Gi-Oh! DFG Leisho 5" else "Yu-Gi-Oh! DFG Leisho 4" }
-			size: { if is_tw() or is_cn() or is_jp() then 24 else if is_ko() then 27 else 38	 }
+			size: { if is_tw() or is_cn() or is_jp() then 24 else if is_ko() then 27 else 32	 }
 			color:
 				script: 
 					if use_name_color() then styling.name_color
@@ -272,6 +272,7 @@ card style:
 			light: { "attribute/light_"+get_lang_ex()+".png"}
 			dark: { "attribute/dark_"+get_lang_ex()+".png"}
 			divine: { "attribute/divine_"+get_lang_ex()+".png"}
+			laugh: { "attribute/laugh_"+get_lang_ex()+".png"}
 			spell: { "attribute/spell_"+get_lang_ex()+".png"}
 			trap: { "attribute/trap_"+get_lang_ex()+".png"}
 	level:
@@ -320,7 +321,7 @@ card style:
 
 				if is_transparent() then if is_pendulum() then 29 else 14
 				else if image_noframe() and is_nopendulum() then 45.5
-				else if is_nopendulum() then 51
+				else if is_nopendulum() then 50
 				else 27.5
 		top:
 			script:
@@ -483,19 +484,8 @@ card style:
 			size: 7
 		visible: script: if is_nmonster() or not is_link() then false else true
 	###################### Link markers
-	Link Marker Up:
-		left: 169
-		top: 91
-		width: 80
-		height: {if is_link() then 24 else 0}
-		z index: 5
-		render style: image
-		popup style: in place
-		choice images: 
-			yes: link_marker_u.png
-		visible: script: if is_link() then true else false
 	Link Marker UL:
-		left: 33
+		left: 34
 		top: 95
 		width: {if is_link() then 38 else 0}
 		height: {if is_link() then 38 else 0}
@@ -516,19 +506,8 @@ card style:
 		choice images: 
 			yes: link_marker_ur.png
 		visible: script: if is_link() then true else false
-	Link Marker Down:
-		left: 169
-		top: 433
-		width: 80
-		height: {if is_link() then 24 else 0}
-		z index: 5
-		render style:image
-		popup style: in place
-		choice images: 
-			yes: link_marker_d.png
-		visible: script: if is_link() then true else false
 	Link Marker DL:
-		left: 33
+		left: 34
 		top: 411
 		width: {if is_link() then 38 else 0}
 		height: {if is_link() then 38 else 0}
@@ -549,9 +528,31 @@ card style:
 		choice images: 
 			yes: link_marker_dr.png
 		visible: script: if is_link() then true else false
+	Link Marker Up:
+		left: 169
+		top: 88
+		width: 80
+		height: {if is_link() then 24 else 0}
+		z index: 5
+		render style: image
+		popup style: in place
+		choice images: 
+			yes: link_marker_u.png
+		visible: script: if is_link() then true else false
+	Link Marker Down:
+		left: 169
+		top: 433
+		width: 80
+		height: {if is_link() then 24 else 0}
+		z index: 5
+		render style:image
+		popup style: in place
+		choice images: 
+			yes: link_marker_d.png
+		visible: script: if is_link() then true else false
 	Link Marker Left:
 		left: 26.5
-		top: 230.5
+		top: 232
 		width:{if is_link() then 24 else 0}
 		height: 80
 		z index: 5
@@ -562,7 +563,7 @@ card style:
 		visible: script: if is_link() then true else false
 	Link Marker Right:
 		left: 370
-		top: 230.5
+		top: 232
 		width: {if is_link() then 24 else 0}
 		height: 80
 		z index: 5

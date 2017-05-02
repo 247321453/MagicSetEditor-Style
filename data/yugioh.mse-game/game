@@ -4,7 +4,7 @@ short name: Yu-Gi-Oh!
 installer group: Yugioh/game files
 icon: icon.png
 position hint: 1
-version: 2014-01-01
+version: 2017-05-01
 
 ############################################################## The script
 init script: include file: script
