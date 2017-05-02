@@ -71,6 +71,7 @@ card field:
 	choice: light
 	choice: dark
 	choice: divine
+	choice: laugh
 	choice: spell
 	choice: trap
 	default: attribute()

@@ -1,14 +1,14 @@
 ﻿mse version: 0.3.8
 game: yugioh
 short name: Standard
-installer group: Yugioh/Standard
+installer group: Yugioh/Series 9
 icon: card-sample.png
 position hint: 01
 
-version: 2009-08-08
+version: 2017-05-01
 depends on:
 	package: yugioh.mse-game
-	version: 2009-08-08
+	version: 2017-05-01
 
 card width: 421
 card height: 614
@@ -272,6 +272,7 @@ card style:
 			light: { "attribute/light_"+get_lang_ex()+".png"}
 			dark: { "attribute/dark_"+get_lang_ex()+".png"}
 			divine: { "attribute/divine_"+get_lang_ex()+".png"}
+			laugh: { "attribute/laugh_"+get_lang_ex()+".png"}
 			spell: { "attribute/spell_"+get_lang_ex()+".png"}
 			trap: { "attribute/trap_"+get_lang_ex()+".png"}
 	level:
