@@ -34,16 +34,16 @@ styling field:
 		name: silver
 		color: rgb(230,230,230)
 	choice:
-		name: ligth bule
+		name: light bule
 		color: rgb(211,252,252)
 	choice: 
 		name: gold
 		color: rgb(216,199,53)
-#styling field:
-#	type: boolean
-#	name: name has shadow
-#	initial: no
-#	description: Whether to allow the card with shadow ? 卡片名称拥有阴影？
+styling field:
+	type: boolean
+	name: name has shadow
+	initial: no
+	description: Whether to allow the card with shadow ? 卡片名称拥有阴影？
 styling field:
 	type: color
 	name: shadow color
@@ -215,38 +215,40 @@ card style:
 			italic name: { if is_tw() then "Yu-Gi-Oh! DFG Leisho 5" else "Yu-Gi-Oh! DFG Leisho 4" }
 			size: { if is_tw() or is_cn() or is_jp() then 24 else if is_ko() then 27 else 38	 }
 			color:
-				script: 
-					if use_name_color() then styling.name_color
-					else if hide_foil() and is_blmonster() or is_nmonster() then rgb(255,255,255)
-					else if hide_foil() and not is_blmonster() then rgb(0,0,0)
-					else if card.card_type=="normal monster" and card.rarity=="ultra rare" then rgb(231,204,1)
-					else if card.card_type=="synchro monster" and card.rarity=="secret rare" then rgb(0,0,0)
-					else if card.card_type=="synchro monster" and card.rarity=="collectors rare" then rgb(0,0,0)
-					else if card.card_type=="synchro monster" and card.rarity=="ghost rare" then rgb(0,0,0)
-					else if card.card_type=="synchro monster" and card.rarity=="rare" then rgb(0,0,0)
-					else if card.rarity=="rare" then rgb(188,198,204) ##silver text if enable then disable shadow
-					else if card.card_type=="synchro monster" and card.rarity=="ultra rare" then rgb(158,141,33)
-					else if card.rarity=="secret rare" then rgb(211,252,252)
-					else if card.rarity=="collectors rare" then rgb(211,252,252)
-					else if card.rarity=="ghost rare" then rgb(211,252,252)
-					##else if card.rarity=="ultra rare" then rgb(88,76,12)
-					else if card.rarity=="ultra rare" then rgb(228,190,5) ##yellow text if enable disable shadow
-					##else if card.rarity=="ultra rare" then rgb(231,204,1)
-					else if card.rarity=="ultimate rare" then rgb(88,76,12)
-					else if card.rarity=="gold rare" then rgb(88,76,12)
-					else if is_blmonster() then rgb(255,255,255) 
-					else if is_nmonster() then rgb(255,255,255) 
-					else rgb(0,0,0)
+				script: if use_name_color() then styling.name_color
+				else if card.rarity=="rare" then rgb(255,255,255)
+				else if card.rarity=="star rare" and is_blmonster() then rgb(255,255,255)
+				else if card.rarity=="star rare" then rgb(35,40,49)
+				else if card.rarity=="mosaic rare" and is_blmonster() then rgb(255,255,255)
+				else if card.rarity=="mosaic rare" then rgb(10,10,10)
+				else if card.rarity=="promo" then rgb(60,0,0)
+				else if card.rarity=="secret rare" then rgb(102,255,255)
+				else if card.rarity=="ghost rare (No foil)" then rgb(133,168,169)
+				else if card.rarity=="ultra rare" then rgb(255,240,0)
+				else if card.rarity=="ultimate rare" then rgb(88,76,12)
+				else if card.rarity=="ultimate rare (No foil)" then rgb(69,60,0)
+				else if card.rarity=="parallel rare" then rgb(88,76,12)
+				else if card.rarity=="gold rare" then rgb(88,76,12)
+				else if is_blmonster() then rgb(255,255,255) 
+				else if is_nmonster() then rgb(255,255,255) 
+				else rgb(0,0,0)
 			shadow color: 
 				script: 
-					if no_shadow() or hide_foil() then rgba(0,0,0,0) #没阴影
-					else if set_shadow() then  styling.shadow_color  #自定义阴影颜色
-					else if card.rarity=="ultra rare" and card.card_type=="normal monster" then rgba(0,0,0,0)
-					##else if card.rarity=="rare" then rgb(188,198,204) ##silver shadow
-					##else if card.rarity=="rare" then rgb(180,175,172)
-					##else if card.rarity=="ultra rare" then rgb(255,215,0)
+					if no_shadow() and is_blmonster() then rgba(0,0,0,0) #没阴影
+					else if set_shadow() then styling.shadow_color  #自定义阴影颜色
+					else if card.rarity=="star rare" and is_blmonster() then rgb(255,255,255)
+					else if card.rarity=="star rare" then rgb(255,255,255)
+					else if card.rarity=="mosaic rare" and is_blmonster() then rgb(255,255,255)
+					else if card.rarity=="mosaic rare" then rgb(255,255,255)
+					else if card.rarity=="promo" then rgb(255,200,210)
+					###else if card.rarity=="secret rare" then rgb(182,162,255)
+					else if card.rarity=="ghost rare (No foil)" then rgb(234,255,255)
+					###else if card.rarity=="ultra rare" then rgb(255,215,0)
 					else if card.rarity=="ultimate rare" then rgb(255,215,0)
+					else if card.rarity=="ultimate rare (No foil)" then rgb(255,243,110)
+					else if card.rarity=="parallel rare" then rgb(255,215,0)
 					else if card.rarity=="gold rare" then rgb(255,215,0)
+					else if no_shadow() and is_spell_card() or is_trap_card() then rgb(0,0,0)				
 					else rgba(0,0,0,0)
 			shadow displacement x: 0.3
 			shadow displacement y: 1.2
