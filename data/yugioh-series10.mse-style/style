@@ -241,15 +241,22 @@ card style:
 				script: 
 					if no_shadow() or hide_foil() then rgba(0,0,0,0) #没阴影
 					else if set_shadow() then  styling.shadow_color  #自定义阴影颜色
-					else if card.rarity=="ultra rare" and card.card_type=="normal monster" then rgba(0,0,0,0)
-					##else if card.rarity=="rare" then rgb(188,198,204) ##silver shadow
-					##else if card.rarity=="rare" then rgb(180,175,172)
-					##else if card.rarity=="ultra rare" then rgb(255,215,0)
+					else if card.rarity=="star rare" and is_blmonster() then rgb(255,255,255)
+					else if card.rarity=="star rare" then rgb(255,255,255)
+					else if card.rarity=="mosaic rare" and is_blmonster() then rgb(255,255,255)
+					else if card.rarity=="mosaic rare" then rgb(255,255,255)
+					else if card.rarity=="promo" then rgb(255,200,210)
+					###else if card.rarity=="secret rare" then rgb(182,162,255)
+					else if card.rarity=="ghost rare (No foil)" then rgb(234,255,255)
+					###else if card.rarity=="ultra rare" then rgb(255,215,0)
 					else if card.rarity=="ultimate rare" then rgb(255,215,0)
+					else if card.rarity=="ultimate rare (No foil)" then rgb(255,243,110)
+					else if card.rarity=="parallel rare" then rgb(255,215,0)
 					else if card.rarity=="gold rare" then rgb(255,215,0)
+					else if no_shadow() and is_spell_card() or is_trap_card() then rgb(0,0,0)				
 					else rgba(0,0,0,0)
-			shadow displacement x: 0.3
-			shadow displacement y: 1.2
+			shadow displacement x: 2.2
+			shadow displacement y: 1.7
 			shadow blur: 2
 		symbol font:
 			name: yugioh-text-replacements
@@ -366,7 +373,7 @@ card style:
 					else if is_cn() then "方正隶变_GBK" 
 					else "Yu-Gi-Oh!ITCStoneSerifSmallCapsBold"
 			italic name: { if is_en() or is_ko() then "ITC Stone Serif" else if is_cn() then "DFPLiShuW5-B5" else "Yu-Gi-Oh! DFG Leisho 4" }
-			size: { if is_cn() then 13.5 else if is_jp() or is_tw() then 13 else 14 }
+			size: { if is_cn() then 13.5 else if is_jp() or is_tw() then 13 else 13 }
 			color: rgb(0,0,0)
 		symbol font:
 			name: yugioh-text-replacements
@@ -403,7 +410,7 @@ card style:
 			script: if is_nmonster() then 464 else if is_big_pend() then 495.5 else 484
 		width: 353
 		height:
-			script: if is_nmonster() then 107.5 else if is_big_pend() then 59 else 72
+			script: if is_nmonster() then 107.5 else if is_big_pend() then 59 else 71
 		font:
 			name: 
 				script:
