@@ -402,10 +402,10 @@ card style:
 	rule text:
 		left: 33
 		top :
-			script: if is_nmonster() then 464 else if is_big_pend() then 495.5 else 484
+			script: if is_nmonster() then 464 else if is_big_pend() then 495.5 else 483
 		width: 353
 		height:
-			script: if is_nmonster() then 107.5 else if is_big_pend() then 59 else 71
+			script: if is_nmonster() then 107.5 else if is_big_pend() then 59 else 73
 		font:
 			name: 
 				script:
