@@ -339,13 +339,13 @@ card style:
 			script:
 				if is_transparent() then if is_pendulum() then 368 else 392
 				else if image_noframe() and is_nopendulum() then 332
-				else if is_nopendulum() then 320
+				else if is_nopendulum() then 322
 				else 368
 		height:
 			script:
 				if is_transparent() then if is_pendulum() then 466 else 585
 				else if image_noframe() and is_nopendulum() then 332
-				else if is_nopendulum() then 320
+				else if is_nopendulum() then 322
 				else if pend_image_is_small() and is_big_pend() then  277
 				else if pend_image_is_small() and is_medium_pend() then  277
 				else if pend_image_is_small() and is_small_pend() then  297.5
@@ -354,7 +354,6 @@ card style:
 				else if is_small_pend() then  344.5
 				else 320
 		z index: -1
-		mask: {if is_link() then "mask-link.png"}
 	############################# Card type
 	monster type:
 		left: 33
@@ -500,6 +499,7 @@ card style:
 		popup style: in place
 		choice images: 
 			yes: link_marker_ul.png
+			none: link_marker_ul_off.png
 		visible: script: if is_link() then true else false
 	Link Marker UR:
 		left: 349
@@ -511,6 +511,7 @@ card style:
 		popup style: in place
 		choice images: 
 			yes: link_marker_ur.png
+			none: link_marker_ur_off.png
 		visible: script: if is_link() then true else false
 	Link Marker DL:
 		left: 34
@@ -522,6 +523,7 @@ card style:
 		popup style: in place
 		choice images: 
 			yes: link_marker_dl.png
+			none: link_marker_dl_off.png
 		visible: script: if is_link() then true else false
 	Link Marker DR:
 		left: 349
@@ -533,6 +535,7 @@ card style:
 		popup style: in place
 		choice images: 
 			yes: link_marker_dr.png
+			none: link_marker_dr_off.png
 		visible: script: if is_link() then true else false
 	Link Marker Up:
 		left: 169
@@ -544,6 +547,7 @@ card style:
 		popup style: in place
 		choice images: 
 			yes: link_marker_u.png
+			none: link_marker_u_off.png
 		visible: script: if is_link() then true else false
 	Link Marker Down:
 		left: 169
@@ -555,6 +559,7 @@ card style:
 		popup style: in place
 		choice images: 
 			yes: link_marker_d.png
+			none: link_marker_d_off.png
 		visible: script: if is_link() then true else false
 	Link Marker Left:
 		left: 26.5
@@ -566,6 +571,7 @@ card style:
 		popup style: in place
 		choice images: 
 			yes: link_marker_l.png
+			none: link_marker_l_off.png
 		visible: script: if is_link() then true else false
 	Link Marker Right:
 		left: 370
@@ -577,6 +583,7 @@ card style:
 		popup style: in place
 		choice images: 
 			yes: link_marker_r.png
+			none: link_marker_r_off.png
 		visible: script: if is_link() then true else false
 	############################# Card sorting / numbering
 	############################# Copyright stuff
