@@ -19,6 +19,7 @@ card field:
 	choice: token card
 	choice: spell card
 	choice: trap card
+	chioce: zarc card
 	description: Selected Card Type. 选择卡片类型
 #   为了适应DataEditorX的存档制作
 #	default: card_type()

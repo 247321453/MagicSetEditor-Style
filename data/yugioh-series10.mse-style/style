@@ -146,6 +146,7 @@ card style:
 			spell card: card-spell.png
 			trap card: card-trap.png
 			token card: card-token2.png
+			zarc card: card-zarc.png
 	foils:
 		left:
 			script:
@@ -392,7 +393,7 @@ card style:
 			color: script: if is_pendulum() then rgb(0,0,0) else if is_blmonster() then rgb(255,255,255)else rgb(0,0,0)
 	edition:
 		left: 84.5
-		top : {if is_transparent() then 586 else 587}
+		top : 588
 		width: 90
 		height: 9
 		z index: 2
