@@ -328,25 +328,25 @@ card style:
 
 				if is_transparent() then if is_pendulum() then 29 else 14
 				else if image_noframe() and is_nopendulum() then 45.5
-				else if is_nopendulum() then 50
-				else 27.5
+				else if is_nopendulum() then 49
+				else 27
 		top:
 			script:
 				if is_transparent() then if is_pendulum() then 110 else 14
 				else if image_noframe() and is_nopendulum() then 107.5
-				else if is_nopendulum() then 112.5
-				else 109.5
+				else if is_nopendulum() then 111.5
+				else 109
 		width:
 			script:
 				if is_transparent() then if is_pendulum() then 368 else 392
 				else if image_noframe() and is_nopendulum() then 332
-				else if is_nopendulum() then 322
+				else if is_nopendulum() then 323
 				else 368
 		height:
 			script:
 				if is_transparent() then if is_pendulum() then 466 else 585
 				else if image_noframe() and is_nopendulum() then 332
-				else if is_nopendulum() then 322
+				else if is_nopendulum() then 323
 				else if pend_image_is_small() and is_big_pend() then  277
 				else if pend_image_is_small() and is_medium_pend() then  277
 				else if pend_image_is_small() and is_small_pend() then  297.5
