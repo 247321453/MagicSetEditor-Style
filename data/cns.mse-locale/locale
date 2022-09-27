@@ -13,6 +13,7 @@ menu:
 	open set:				打开套牌...	Ctrl+O
 	save set:				保存套牌	Ctrl+S
 	save set as:			套牌另存为...	F12
+	save set as directory:		套牌另存为文件夹...
 	export:					导出
 	export html:				HTML文件...
 	export image:				卡牌图像...
@@ -30,17 +31,25 @@ menu:
 	undo:				撤销%s	Ctrl+Z
 	redo:				重做%s	Ctrl+Y
 	cut:				剪切	Ctrl+X
+	cut card:		剪切	Ctrl+X
+	cut keyword:	剪切	Ctrl+X
 	copy:				复制	Ctrl+C
+	copy card:			复制	Ctrl+C
+	copy keyword:		复制	Ctrl+C
 	paste:				粘贴	Ctrl+V
+	paste card:		粘贴	Ctrl+V
+	paste keyword:	粘贴	Ctrl+V
+	select all:				Select &All	Ctrl+A
 	find:				查找	Ctrl+F
 	find next:			查找下一个	F3
 	replace:			替换	Ctrl+H
 	auto replace:		自动替换...
-	preferences:		参数设置...	F2
+	preferences:		参数设置...
 	
 	cards:			卡牌
 	previous card:		上一张卡牌	PgUp
 	next card:			下一张卡牌	PgDn
+	search cards:			搜索卡牌	Ctrl+K
 	add card:			添加卡牌	Ctrl+Enter
 	add cards:			批量添加卡牌...
 	remove card:		删除所选卡牌
@@ -54,6 +63,7 @@ menu:
 	keywords:		关键词
 	previous keyword:	上一个关键词	PgUp
 	next keyword:		下一个关键词	PgDn
+	search keywords:			&Search Keywords	Ctrl+K
 	add keyword:		添加关键词	Ctrl+Enter
 	remove keyword:		删除所选关键词	Del
 	
@@ -75,13 +85,13 @@ menu:
 	
 	window:			窗口
 	new window:			新建窗口
-	cards tab:			卡牌编辑	F5
-	set info tab:		套牌信息	F7
-	style tab:			风格选择	F6
-	keywords tab:		关键词	F8
-	stats tab:			统计结果	F9
-	random pack tab:	随机卡包	F10
-	console tab:		控制台	Ctrl+F9
+	cards tab:			卡牌编辑	Alt+1
+	style tab:			风格选择	Alt+2
+	set info tab:		套牌信息	Alt+3
+	keywords tab:		关键词	Alt+4
+	stats tab:			统计结果	Alt+5
+	random pack tab:	随机卡包	Alt+6
+	console tab:		控制台	Alt+7
 	
 	help:			帮助
 	index:				索引...	F1
@@ -113,12 +123,13 @@ menu:
 help:
 	welcome:			欢迎使用 Magic Set Editor
 	
-	file:
+	#file:
 	new set:			创建新的套牌
 	open set:			打开已有套牌
 	last opened set:	打开 '%s'
 	save set:			保存现有套牌
 	save set as:		使用新文件名保存套牌
+	save set as directory:		保存套牌的每一张卡牌作为一个单独存档保存到文件夹
 	export:				导出卡牌...
 	export html:		将卡牌导出成文字或者网页格式
 	export image:		将所选卡牌导出成为一张图片
@@ -132,7 +143,7 @@ help:
 	show profiler:		显示（脚本）函数分析器窗口。用于优化。
 	exit:				退出Magic Set Editor程序，提示保存你的套牌
 	
-	edit:
+	#edit:
 	undo:				撤销上一个动作
 	redo:				重做上一个动作
 	cut:				将选中的文字剪切至剪切板
@@ -144,15 +155,17 @@ help:
 	paste:				从剪切板插入文字
 	paste card:			从剪切板插入卡牌
 	paste keyword:		从剪切板插入关键词
+	select all:				选择全部文本
 	find:				搜索卡牌文字
 	find next:			查找下一个
 	replace:			替换卡牌文字
 	auto replace:		自动替换什么文字？
 	preferences:		修改Magic Set Editor的设置
 	
-	cards:
+	#cards:
 	previous card:		选择列表中的上一张卡牌
 	next card:			选择列表中的下一张卡牌
+	search cards:		使用搜索词筛选卡牌列表
 	add card:			添加一个新的空白卡牌到本套牌
 	add cards:			添加多张卡牌到本套牌
 	remove card:		从本套牌中删除所选卡牌
@@ -164,13 +177,14 @@ help:
 	rotate 180:			将所显示卡牌上下翻转
 	card list columns:	调整卡牌列表栏显示项目和显示顺序
 	
-	keywords:
+	#keywords:
 	previous keyword:	从列表中选择上一个关键词
 	next keyword:		从列表中选择下一个关键词
+	search keywords:		使用搜索词筛选关键字列表
 	add keyword:		添加一个新关键词到本套牌中
 	remove keyword:		从本套牌中删除选中的关键词
 	
-	format:
+	#format:
 	bold:				将所选文字设为粗体
 	italic:				将所选文字设为斜体
 	symbols:			将所选文字改成符号
@@ -178,14 +192,14 @@ help:
 	# spelling
 	no spelling suggestions:	没有拼写纠正建议
 	
-	graph:
+	#graph:
 	pie:				饼状图，每一份的大小取决与卡牌数量
 	bar:				条形图，条形高度取决于卡牌数量
 	stack:				条形图，堆叠条形图
 	scatter:			散点图，每一个散点的大小取决与卡牌数量
 	scatter pie:		散饼图，每一个三点都是一个小型饼状图
 	
-	window:
+	#window:
 	new window:			创建一个额外窗口用来编辑同一套牌
 	cards tab:			编辑套牌中的卡牌
 	set info tab:		编辑套牌信息，例如创建者，其他
@@ -195,7 +209,7 @@ help:
 	random pack tab:	可以生成卡包（注：并非是可以做卡包图，是生成卡包内容，即卡包里的卡）
 	console tab:		显示故障信息，并允许执行脚本命令。
 	
-	help:				
+	#help:				
 	index:				
 	website:				
 	about:				
@@ -203,6 +217,9 @@ help:
 	# Cards panel
 	collapse notes:		隐藏写字板的格子
 	expand notes:		显示写字板的格子
+	search cards control:	过滤卡牌列表。用于排除卡牌。使用字段：在特定字段中搜索。使用引号进行文字搜索。用空格分隔多个查询。
+	# Keywords panel
+	search keywords control: 过滤关键字列表。用于排除关键字。使用字段：在特定字段中搜索。使用引号进行文字搜索。用空格分隔多个查询。
 	# Random pack panel
 	random seed:		不同的卡包会生成不同的号码。
 	fixed seed:			给‘随机卡包’使用相同的号码。
@@ -235,7 +252,7 @@ help:
 	grid:					显示网格线
 	snap:					吸附形状和控制点到网格线
 	
-	tool:
+	#tool:
 	select:					选择并移动形状
 	rotate:					旋转并修剪形状
 	points:					编辑形状控制点
@@ -243,7 +260,7 @@ help:
 	symmetry:				给系列符号添加对称效果
 	paint:					用笔刷在图形上绘制
 	
-	select editor:
+	#select editor:
 	merge:					把这个图形融合到下面
 	subtract:				把这个图形从下面剪掉，仅保留不在这个图形，但是在下面图形的区域
 	intersect:				把这个图形和下面相交，仅保留图像共有区域
@@ -444,7 +461,7 @@ label:
 	total cards:		全部卡牌
 	
 	# Open dialogs
-	all files			全部文件
+	all files:			全部文件
 	
 	# Other set window dialogs
 	save changes:
@@ -512,7 +529,7 @@ label:
 	selection top:			顶部
 	selection width:		宽
 	selection height:		高
-	zoom:					缩放
+	#zoom:					缩放
 	fix aspect ratio:		修改比例 (宽/高)
 	zoom amount:			调整
 	zoom amount x:			调整 &X
@@ -547,6 +564,7 @@ label:
 	installer size:			大小:
 	installer status:		位置:
 	no version:				-
+	put space between cards:	卡牌之间保留空白空间
 
 ############################################################## Buttons/checkboxes/choices in the GUI
 button:
@@ -572,10 +590,10 @@ button:
 	evaluate:				确定
 	
 	# Welcome
-	new set:				New Set
-	open set:				Open Set
-	check updates:			Check Update
-	last opened set:		Last Set
+	new set:			New set
+	open set:			Open set
+	check updates:			检查更新
+	last opened set:	Last opened set
 	
 	# Preferences
 	open sets in new window:	在新窗口打开/创建所有套牌
@@ -630,6 +648,7 @@ button:
 	install group:				全部安装
 	upgrade group:				全部升级
 	remove group:				全部移除
+	apply language:				变更语言
 
 ############################################################## Titles in the GUI
 title:
@@ -642,6 +661,7 @@ title:
 	new set:					新建套牌
 	open set:					打开套牌
 	save set:					套牌另存为
+	save set as directory:	套牌另存为文件夹
 	save image:					保存图片
 	updates available:			可用更新
 	save changes:				保存修改？
@@ -658,6 +678,7 @@ title:
 	select columns:				选择栏目
 	select cards:				选择卡牌
 	select cards export:    	导出选中的卡牌
+	select cards print:	选择你需要打印的卡牌
 	# slice
 	slice image:				图片裁剪
 	# pack
@@ -677,6 +698,7 @@ title:
 	installing updates:			安装更新
 	
 	cannot create file:			无法创建文件
+	settings:			设置
 
 ############################################################## Action (undo/redo) names
 action:
@@ -837,7 +859,7 @@ type:
 	game:			游戏
 	set:			套牌
 	stylesheet:		样式表
-	export template:导出模板
+	export template:	导出模板
 	symbol:			符号
 	card:			卡牌
 	cards:			套牌

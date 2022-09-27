@@ -11,6 +11,7 @@ menu:
 	open set:		打開套牌...	Ctrl+O
 	save set:		保存套牌	Ctrl+S
 	save set as:		套牌另存為...	F12
+	save set as directory:		套牌另存为文件夹...
 	export:			導出
 	export html:		HTML文件...
 	export image:		卡牌圖像...
@@ -28,8 +29,15 @@ menu:
 	undo:			撤銷%s	Ctrl+Z
 	redo:			重做%s	Ctrl+Y
 	cut:			剪切	Ctrl+X
+	cut card:		剪切	Ctrl+X
+	cut keyword:	剪切	Ctrl+X
 	copy:			復制	Ctrl+C
+	copy card:			复制	Ctrl+C
+	copy keyword:		复制	Ctrl+C
 	paste:			貼上	Ctrl+V
+	paste card:		粘贴	Ctrl+V
+	paste keyword:	粘贴	Ctrl+V
+	select all:				Select &All	Ctrl+A
 	find:			搜尋	Ctrl+F
 	find next:		搜尋下一個	F3
 	replace:		替換	Ctrl+H
@@ -39,6 +47,7 @@ menu:
 	cards:			卡牌
 	previous card:		選擇上一張卡牌	PgUp
 	next card:		選擇下一張卡牌	PgDn
+	search cards:			搜索卡牌	Ctrl+K
 	add card:		添加卡牌	Ctrl+Enter
 	add cards:		批量添加卡牌...
 	remove card:		刪除所選卡牌
@@ -52,6 +61,7 @@ menu:
 	keywords:		關鍵詞
 	previous keyword:	選擇上一個關鍵詞	PgUp
 	next keyword:		選擇下一個關鍵詞	PgDn
+	search keywords:			&Search Keywords	Ctrl+K
 	add keyword:		添加關鍵詞	Ctrl+Enter
 	remove keyword:		刪除所選關鍵詞	Del
 	
@@ -74,8 +84,9 @@ menu:
 	window:			視窗
 	new window:		新建視窗
 	cards tab:		卡牌編輯	F5
-	set info tab:		套牌資訊	F6
+        
 	style tab:		風格選擇	F7
+	set info tab:		套牌資訊	F6
 	keywords tab:		關鍵詞	F8
 	stats tab:		統計結果	F9
 	random pack tab:	隨機卡包
@@ -117,6 +128,7 @@ help:
 	last opened set:	打開 '%s'
 	save set:		保存現有套牌
 	save set as:		使用新文件名保存套牌
+	save set as directory:		保存套牌的每一张卡牌作为一个单独存档保存到文件夹
 	export:			導出套牌...
 	export html:		將套牌導出成網頁格式
 	export image:		將所選卡牌導出成為一張圖片
@@ -142,6 +154,7 @@ help:
 	paste:			從剪切板插入文字
 	paste card:		從剪切板插入卡牌
 	paste keyword:		從剪切板插入關鍵詞
+	select all:				选择全部文本
 	find:			搜索卡牌文字
 	find next:		搜尋下一個
 	replace:		替換卡牌文字
@@ -151,6 +164,7 @@ help:
 	cards:
 	previous card:		選擇列表中的上一張卡牌
 	next card:		選擇列表中的下一張卡牌
+	search cards:		使用搜索词筛选卡牌列表
 	add card:		添加一個新的空白卡牌到本套牌
 	add cards:		添加多張卡牌到本套牌
 	remove card:		從本套牌中刪除所選卡牌
@@ -165,6 +179,7 @@ help:
 	keywords:
 	previous keyword:	從列表中選擇上一個關鍵詞
 	next keyword:		從列表中選擇下一個關鍵詞
+	search keywords:		使用搜索词筛选关键字列表
 	add keyword:		添加一個新關鍵詞到本套牌中
 	remove keyword:		從本套牌中刪除選中的關鍵詞
 	
@@ -201,6 +216,9 @@ help:
 	# Cards panel
 	collapse notes:		Hide the card notes box
 	expand notes:		Show the card notes box
+	search cards control:	过滤卡牌列表。用于排除卡牌。使用字段：在特定字段中搜索。使用引号进行文字搜索。用空格分隔多个查询。
+	# Keywords panel
+	search keywords control: 过滤关键字列表。用于排除关键字。使用字段：在特定字段中搜索。使用引号进行文字搜索。用空格分隔多个查询。
 	# Random pack panel
 	random seed:		Different packs will be generated each time.
 	fixed seed:			Using the same seed number gives the same 'random' packs.
@@ -545,6 +563,7 @@ label:
 	installer size:			Size:
 	installer status:		Status:
 	no version:				-
+	put space between cards:	卡牌之间保留空白空间
 
 ############################################################## Buttons/checkboxes/choices in the GUI
 button:
@@ -628,6 +647,7 @@ button:
 	install group:		全部安裝
 	upgrade group:		全部昇級
 	remove group:		全部移除
+	apply language:		变更语言
 	
 ############################################################## Titles in the GUI
 title:
@@ -656,6 +676,7 @@ title:
 	select columns:		選擇欄目
 	select cards:		選擇卡牌
 	select cards export:    導出選中的卡牌
+	select cards print:	选择你需要打印的卡牌
 	# slice
 	slice image:		圖片切片
 	# pack
@@ -675,6 +696,7 @@ title:
 	installing updates:	安裝更新
 	
 	cannot create file:	無法創建文件
+	settings:			设置
 
 ############################################################## Action (undo/redo) names
 action:
