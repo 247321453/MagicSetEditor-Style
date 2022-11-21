@@ -18,4 +18,5 @@ include file: word/word_lists_chs
 include file: word/word_lists_jp
 include file: word/word_lists_ko
 include file: auto_replace
+include file: font_list
 ############################################################## Other stuff
