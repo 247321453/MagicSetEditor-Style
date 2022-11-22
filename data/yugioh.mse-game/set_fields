@@ -12,7 +12,7 @@ set field:
 set field:
 	type: choice
 	name: language
-	initial: EN
+	initial: CN
 	choice: CN
 	choice: TW
 	choice: JP
